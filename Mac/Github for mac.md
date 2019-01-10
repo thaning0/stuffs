@@ -70,3 +70,18 @@ $ brew cask install github
 .gitignore
 ```
 加入Repository Settings的Ignored files中
+
+11. 管理Latex文件，Latex编译会产生一些中间文件，不希望上传到Github，编辑Ignored files
+
+```
+# 忽略所有文件，不忽略文件夹
+*.*
+
+#只上传以下必要文件
+!*.tex # tex主文件
+!*.bib # 参考文献
+!*.eps # 图片
+!*.sty # 文章格式
+!*.bst # 参考文献格式
+```
+
