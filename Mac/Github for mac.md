@@ -55,4 +55,5 @@ $ git push origin master #将文件推送到主干，新建分支后可以推送
 8. 删除git仓库
 ```
 $ cd ~/project/stuffs
-$ rm -rf .git
+$ rm -rf .git #接着删除文件夹就可以了
+```
