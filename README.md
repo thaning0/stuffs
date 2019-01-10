@@ -1,5 +1,2 @@
 # stuffs
-some codes and others
-
-
-test
+some codes and remarks

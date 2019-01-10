@@ -57,3 +57,9 @@ $ git push origin master #将文件推送到主干，新建分支后可以推送
 $ cd ~/project/stuffs
 $ rm -rf .git #接着删除文件夹就可以了
 ```
+
+
+9. 或者最简单的下载Github客户端
+```
+$ brew cask install github
+```
