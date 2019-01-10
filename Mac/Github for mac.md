@@ -31,7 +31,7 @@ $ git config --global user.email "t***@***.com"
 4. Github授权
 
 ```
-$ ssh-keygen -t rsa -b 4096 -C "than.ning0@gmail.com" #生成SSH密钥
+$ ssh-keygen -t rsa -b 4096 -C "t***@***.com" #生成SSH密钥
 $ open ~/.ssh/id_rsa.pub #复制公钥(全部)到github设置的SSH栏
 $ ssh git@github.com # 显示You've successfully authenticated
 ```
@@ -51,3 +51,4 @@ $ git add . #将改动加入暂存区
 $ git commit -m '提交注释'
 $ git push origin master #将文件推送到主干，新建分支后可以推送到分支，将master改为分支名称
 ```
+
