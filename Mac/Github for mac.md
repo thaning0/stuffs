@@ -52,3 +52,7 @@ $ git commit -m '提交注释'
 $ git push origin master #将文件推送到主干，新建分支后可以推送到分支，将master改为分支名称
 ```
 
+8. 删除git仓库
+```
+$ cd ~/project/stuffs
+$ rm -rf .git
