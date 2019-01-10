@@ -63,3 +63,10 @@ $ rm -rf .git #接着删除文件夹就可以了
 ```
 $ brew cask install github
 ```
+
+10. Mac会自动在文件夹下创建 .DS_Store文件，将
+```
+.DS_Store
+.gitignore
+```
+加入Repository Settings的Ignored files中
