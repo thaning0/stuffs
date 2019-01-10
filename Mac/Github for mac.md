@@ -21,7 +21,7 @@ $ git --version #显示新版
 
 ```
 $ git config --global user.name "than.ninG" # 全局名称
-$ git config --global user.email "than.ning0@gmail.com" 
+$ git config --global user.email "t***@***.com" 
 ```
 
 并将[Email加入Github账号](https://help.github.com/articles/setting-your-commit-email-address-on-github/)
@@ -45,3 +45,9 @@ $ git clone git@github.com:thaning0/stuffs #clone远程仓库到当前文件夹�
 ```
 
 7. 更改本地仓库中的内容
+```
+$ cd ~/project/stuffs
+$ git add . #将改动加入暂存区
+$ git commit -m '提交注释'
+$ git push origin master #将文件推送到主干，新建分支后可以推送到分支，将master改为分支名称
+```
