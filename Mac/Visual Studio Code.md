@@ -10,3 +10,4 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 数学公式支持还是不够好。还是Typora更强，Latex支持更加全面
 
 ### Python in VSC
+testest
