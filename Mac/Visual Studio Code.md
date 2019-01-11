@@ -16,11 +16,13 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 解决方式：还是用Typora编辑Markdown
 
 ### Python in VSC
-安装Python，与VSC的[Python拓展](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+1. 安装Python，与VSC的[Python拓展](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 控制台Python命令
 ```
 >python:select interpreter #或者简单的输入 psi 选择python解释器
 >python:run python file in terminal #运行py脚步，等等
 ```
+
+2. 代码提示(Autocomplete)
 
