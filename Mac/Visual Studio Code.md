@@ -10,7 +10,7 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 ### Markdown in VSC
 
 **Extensions**:
-- [Markdown All in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#review-details) 一个插件超多功能
+- [Markdown All in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#review-details) 一个插件功能全覆盖
 
 数学公式支持还是不够好。还是Typora更强(并且很少遇到Bug)，Latex支持更加全面
 
@@ -27,6 +27,7 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 ```
 
 使用虚拟环境
+
 用`pyenv-virtulenv`创建虚拟环境后重启VSC，重新选择解释器就能看见虚拟环境中的解释器了。
 
 2. 代码提示(Autocomplete)
@@ -34,6 +35,7 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 - 基于机器学习的代码提示拓展(测试版)[Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode#overview)
 
 3. [代码分析(Linting)](https://code.visualstudio.com/docs/python/linting)
+- Python解释器自带
 - 安装pylint`pip install pylint`
 - `"python.linting.pylintEnabled": true,`加入VSC设置
 
@@ -41,3 +43,14 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 - 安装autopep8 或者按格式化快捷键 optio+shift+F 自动安装
   
   
+### Latex in VSC
+使用[Latex workship](https://github.com/James-Yu/LaTeX-Workshop/wiki)，支持Mactex
+```
+$ brew cask install mactex-no-gui # 安装mactex
+```
+
+Latex workship快捷键：
+- option+command+b # 编译文件
+- option+command+c # 删除多余文件
+- option+command+v # 预览pdf 或者点击右上角按钮
+
