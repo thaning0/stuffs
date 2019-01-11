@@ -54,3 +54,5 @@ Latex workship快捷键：
 - option+command+c # 删除多余文件
 - option+command+v # 预览pdf 或者点击右上角按钮
 
+优势：自带代码补全
+缺点：pdf预览功能较差
