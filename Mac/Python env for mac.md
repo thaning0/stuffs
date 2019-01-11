@@ -42,7 +42,7 @@ $ pyenv virtualenvs # 显示已有的虚拟环境
 ```
 $ pyenv activate <name> # 手动启动已有虚拟环境
 $ pyenv deactivate  # 手动停止虚拟环境
-¥ pyenv uninstall <name> # 删除环境
+¥ pyenv uninstall <name> # 删除环境 在问号后面输入y
 ```
 
 ***Remark***: 如果出现“zlib not available"的错误，Mojave10.14.2使用以下代码可以解决问题

@@ -68,6 +68,7 @@ $ brew cask install github
 ```
 .DS_Store
 .gitignore
+.vscode/ #忽略vsc配置文件
 ```
 加入Repository Settings的Ignored files中
 

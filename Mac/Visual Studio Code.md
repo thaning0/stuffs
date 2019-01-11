@@ -24,5 +24,8 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 >python:run python file in terminal #运行py脚步，等等
 ```
 
+使用虚拟环境
+用`pyenv-virtulenv`创建虚拟环境后重启VSC，重新选择解释器就能看见虚拟环境中的解释器了。
+
 2. 代码提示(Autocomplete)
 
