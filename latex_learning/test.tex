@@ -1,0 +1,158 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%% Packages %%%%%%%%%%%%%%%%
+\usepackage{style} % style.sty: LaTeX Document style
+\usepackage{graphicx} % graphicx: import external graphics
+\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref} % hyperref: create hyperlinks within the document
+\usepackage{listings} % listings: add non-formatted code text
+\usepackage{color, xcolor} % xcolor: provide more predefined colors
+\usepackage[comma,numbers,square,sort&compress]{natbib} % natbib: author-data citation styles
+\usepackage{amsmath} % amsmath: mathtool package
+\usepackage{amssymb} % amssymb: provide more mathematical symbols
+\usepackage{amsfonts} % amsfonts: provide more mathematical symbols' font styles
+\usepackage{mathrsfs} % mathrsfs: other mathematical symbols.
+\usepackage{bbm} % bbm: make \mathbb compatible to lowercase letters
+\usepackage{amsthm} % amsthm: introduce the theorem environment
+\usepackage{appendix} % appendix: add a separate appendix
+
+%%%%%%%%%%%%%%% New Commands %%%%%%%%%%%%%
+% add new command when needed
+\newcommand{\mX}{\bf{X}} % define the matrix form by Boldface typeface
+\newcommand{\vx}{\bf{x}} % define the vector form
+\newcommand{\mf}[1]{\boldmath{$#1$}} % math bold font in line
+\newcommand{\EqDef}{\ensuremath{\stackrel{\mathrm{def}}{=}}} % definition equation
+
+
+%%%%%%%%%%%%%%% New Theorem %%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+%%%%%%%%%%%%%%% Document info %%%%%%%%%%%%
+\title{A Latex Example}
+\name{name \thanks{Thanks}}
+\address{address}
+
+%%%%%%%%%%%%%%%%%%%% Main %%%%%%%%%%%%%%%%
+\begin{document}
+    \maketitle % add title
+
+    \begin{abstract}
+        This paper gives a example for every used package.
+    \end{abstract}
+
+    \begin{keywords}
+        Latex, package, example
+    \end{keywords}
+
+    \section{Introduction}
+    Used packages including amsmath, amssymb, amsfonts, mathrsfs, bbm, amsthm, appendix, listings, graphicxd, hyperref...
+
+    \section{Examples}
+    Examples
+
+    \subsection{Theorems}
+    We can add lemma, corollary, proposition similarly.
+    \begin{theorem}
+        This is a theorem!
+        \label{theorem_1}
+    \end{theorem}
+    \begin{proof}
+        This is a proof of the theorem.
+    \end{proof}
+
+    \subsection{Math packages}
+    Math formulation is supported by amsmath, amssymb, amsfonts, mathrsfs, bbm, amsthm.
+    This is a math formulation
+    \begin{align}
+        F(f)(\xi)=\int_{\bf{R}^n} f(x)\rm e^{-\rm i x\xi}\rm dx,\quad \xi\in\bf{R}^n. \tag{1}
+    \end{align}
+
+    This is a matrix
+    $$
+    \begin{pmatrix}
+        1 & 2 & 3\\
+        2 & 4 & 6
+    \end{pmatrix}.
+    $$
+    
+    \subsection{Listings}
+    Package Listings adds code block into paper.
+    This is a code block with a frame.
+    \begin{lstlisting}[frame = single]
+        code line 1
+        code line 2
+    \end{lstlisting}
+
+    \subsection{Hyperref}
+    This package can add hyperlinks for any reference in paper or any citation.
+    Such as \autoref{theorem_1} we labeled before and \cite{Example}. We can refer any label we defined, equations, reference...
+
+    \subsection{Graphicx}
+    Package graphicx can add images as \autoref{fig_1}
+
+    \begin{figure}[ht]
+        \centering % certer image
+        \includegraphics[width=\linewidth]{example}
+        \caption{Example image} % image description
+        \label{fig_1}
+    \end{figure}
+    
+    Or you can align images in a row like \autoref{fig_2}.
+
+    \begin{figure}[htb]
+        \centering
+        \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{example}
+            (a) Result 1
+        \end{minipage}
+        \begin{minipage}[t]{0.48\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{example}
+            (b) Results 2
+        \end{minipage}
+   
+        \caption{Example of images in a row.}
+        \label{fig_2}
+    \end{figure}
+
+    Also you align images in a matrix like %\autoref{fig_3}
+
+    \begin{figure}[ht]
+        \centering
+        \begin{minipage}[htb]{0.48\linewidth}
+            \centering
+            \includegraphics[width=0.98\linewidth]{example}
+            (a)
+            \includegraphics[width=0.98\linewidth]{example}
+            (c)
+        \end{minipage}
+        \begin{minipage}[htb]{0.48\linewidth}
+            \centering
+            \includegraphics[width=0.98\linewidth]{example}
+            (b)
+            \includegraphics[width=0.98\linewidth]{example}
+            (d )
+        \end{minipage}
+        \caption{Example of images in matrix.}
+        \label{fig_3}
+    \end{figure}
+
+
+    \section{Conclusion}
+    This is a conclusion.
+    
+    
+    \appendixpage % adds a separate title “Appendices” above the first appendix
+    \appendix
+    This is a appendix
+
+    \bibliographystyle{bst}
+    \bibliography{refs}
+\end{document}
