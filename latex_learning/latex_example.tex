@@ -43,7 +43,7 @@
     \maketitle % add title
 
     \begin{abstract}
-        This paper gives a example for every used package.
+        This paper gives some examples for every used package and some other stuffs.
     \end{abstract}
 
     \begin{keywords}
@@ -52,6 +52,18 @@
 
     \section{Introduction}
     Used packages including amsmath, amssymb, amsfonts, mathrsfs, bbm, amsthm, appendix, listings, graphicxd, hyperref...
+
+    \section{Style and Reference}
+    \subsection{Style}
+    The style of this paper and reference are given by .sty and .bst respectively.
+    You can replace them if needed. 
+    And you can find almost any style in \href{https://www.sharelatex.com/templates}{sharelatex}.
+    
+    \subsection{Reference}
+    All reference bibtex info should be stored in .bib file.
+    Cite a reference by \cite{referencekey}.
+
+    You can find bibtex in \href{https://scholar.google.com}{Google Scholar}. Just click the cite button and find the bibtex on left-below.
 
     \section{Examples}
     Examples
@@ -91,14 +103,14 @@
 
     \subsection{Hyperref}
     This package can add hyperlinks for any reference in paper or any citation.
-    Such as \autoref{theorem_1} we labeled before and \cite{Example}. We can refer any label we defined, equations, reference...
+    Such as \autoref{theorem_1} we labeled before and \cite{referencekey}. We can refer any label we defined, equations, reference...
 
     \subsection{Graphicx}
     Package graphicx can add images as \autoref{fig_1}
 
-    \begin{figure}[ht]
+    \begin{figure}[htbp] % Where to place the figure: h-Here, t-top of this page, b-bottom of this page, p-top of next page
         \centering % certer image
-        \includegraphics[width=\linewidth]{example}
+        \includegraphics[width=\linewidth]{example} 
         \caption{Example image} % image description
         \label{fig_1}
     \end{figure}
@@ -107,37 +119,42 @@
 
     \begin{figure}[htb]
         \centering
-        \begin{minipage}[t]{0.48\linewidth}
+        \begin{minipage}[t]{0.33\linewidth}
             \centering
             \includegraphics[width=\linewidth]{example}
-            (a) Result 1
+            (a)
         \end{minipage}
-        \begin{minipage}[t]{0.48\linewidth}
+        \begin{minipage}[t]{0.33\linewidth}
             \centering
             \includegraphics[width=\linewidth]{example}
-            (b) Results 2
+            (b)
+        \end{minipage}
+        \begin{minipage}[t]{0.33\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{example}
+            (c)
         \end{minipage}
    
         \caption{Example of images in a row.}
         \label{fig_2}
     \end{figure}
 
-    Also you align images in a matrix like %\autoref{fig_3}
+    Also you can align images in a matrix like \autoref{fig_3}.
 
-    \begin{figure}[ht]
+    \begin{figure}[htbp] % two columns of images in a row
         \centering
-        \begin{minipage}[htb]{0.48\linewidth}
+        \begin{minipage}[htb]{0.45\linewidth} % align images in column
             \centering
-            \includegraphics[width=0.98\linewidth]{example}
+            \includegraphics[width=\linewidth]{example}
             (a)
-            \includegraphics[width=0.98\linewidth]{example}
+            \includegraphics[width=\linewidth]{example}
             (c)
         \end{minipage}
-        \begin{minipage}[htb]{0.48\linewidth}
+        \begin{minipage}[htb]{0.45\linewidth}
             \centering
-            \includegraphics[width=0.98\linewidth]{example}
+            \includegraphics[width=\linewidth]{example}
             (b)
-            \includegraphics[width=0.98\linewidth]{example}
+            \includegraphics[width=\linewidth]{example}
             (d )
         \end{minipage}
         \caption{Example of images in matrix.}
