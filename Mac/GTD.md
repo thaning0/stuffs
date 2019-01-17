@@ -20,5 +20,3 @@ GTD主要包括五步：
 
 Omnifocus是帮助实现GTD的工具，保持GTD的想法！
 
-
-
