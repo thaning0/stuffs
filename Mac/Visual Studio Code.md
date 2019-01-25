@@ -8,6 +8,7 @@ VSC支持Git资源管理，直接将git仓库文件夹加入Explore就可以了
 > 重启VSC
 
 - option+z开启自动换行
+- [Fira Code](https://github.com/tonsky/FiraCode) 字体
 
 ### Markdown in VSC
 
