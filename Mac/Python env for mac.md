@@ -42,12 +42,26 @@ $ pyenv virtualenvs # 显示已有的虚拟环境
 ```
 $ pyenv activate <name> # 手动启动已有虚拟环境
 $ pyenv deactivate  # 手动停止虚拟环境
-¥ pyenv uninstall <name> # 删除环境 在问号后面输入y
+$ pyenv uninstall <name> # 删除环境 在问号后面输入y
 ```
 
 ***Remark***: 如果出现“zlib not available"的错误，Mojave10.14.2使用以下代码可以解决问题
 
 ```
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+```
+
+
+
+创建一个常用的虚拟环境
+
+```
+$ pyenv virtualenv 3.7.1 common
+$ pyenv activate common
+$ python -m pip install --upgrade pip #更新pip
+$ pip install numpy
+$ pip install pandas
+$ pip install matplotlib
+
 ```
 
