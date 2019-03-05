@@ -62,6 +62,38 @@ $ python -m pip install --upgrade pip #更新pip
 $ pip install numpy
 $ pip install pandas
 $ pip install matplotlib
+```
 
+
+
+### 遇到Matplotlib包的问题,
+
+调用这个包时显示一下错误
+
+```
+ImportError: Python is not installed as a framework. The Mac OS X backend will not be able to function correctly if Python is not installed as a framework. See the Python documentation for more information on installing Python as a framework on Mac OS X. Please either reinstall Python as a framework, or try one of the other backends. If you are using (Ana)Conda please install python.app and replace the use of 'python' with 'pythonw'. See 'Working with Matplotlib on OSX' in the Matplotlib FAQ for more information.
+```
+
+总的来说是Matplotlib后端冲突导致的错误, 后端的设置[参考](https://matplotlib.org/users/customizing.html#customizing-matplotlib).
+
+找到Matplotlib包文件夹下的matplotlibrc文件把其中的backend: macosx改为
+
+```
+backend: TkAgg
+```
+
+matplotlibrc文件的位置有四种情况, 具体看上文的参考. 我的Matplotlib包是安装在虚拟环境tensorflow中的, matplotlibrc文件位置为
+
+```
+/Users/t/.pyenv/versions/3.7.1/envs/tensorflow/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc
+```
+
+##### 查看虚拟环境中的Matplotlib包的路径
+
+在控制台输入
+
+```
+$ pyenv activate tensorflow # 进入虚拟环境tensorflow
+$ pip show matplotlib # 显示Matplotlib包相关信息, 包括路径
 ```
 

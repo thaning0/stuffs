@@ -59,3 +59,7 @@ Latex workship快捷键：
 
 优势：自带代码补全
 缺点：pdf预览功能较差
+
+
+
+设置自动补全, 把回车补全关闭(在设置中搜索 Accept Suggestion on Enter), 打开Tab补全 (在设置中搜索 Tab Completion)
